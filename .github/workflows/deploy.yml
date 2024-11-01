@@ -17,11 +17,6 @@ concurrency:
 
 jobs:
   deploy:
-    env:
-      working-directory: "."
-    defaults:
-      run:
-        working-directory: ${{ env.working-directory }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -34,7 +29,7 @@ jobs:
         with:
           node-version: 18
           cache: "npm"
-          cache-dependency-path: ${{ env.working-directory }}/package-lock.json
+          cache-dependency-path: ./package-lock.json
       - name: Install dependencies
         run: npm install
       - name: Build
@@ -44,7 +39,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "${{ env.working-directory}}/dist"
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
