@@ -1,5 +1,6 @@
 import { FC } from "react";
 import SocialButton from "./SocialButton";
+import Headshot from "../assets/headshot.png";
 
 const Hero: FC = () => {
   return (
@@ -29,7 +30,7 @@ const Hero: FC = () => {
       </div>
       <div className="flex-grow basis-0 relative">
         <div className="bg-white rounded-lg flex-grow basis-0 absolute w-full h-3/4 bottom-0 -z-10"></div>
-        <img src="/src/assets/headshot.png" />
+        <img src={Headshot} />
       </div>
     </div>
   );
