@@ -16,7 +16,7 @@ const Hero: FC = () => {
           I solve problems through{" "}
           <span style={{ color: "rgb(255, 228, 94)" }}>code.</span>
         </h3>
-        <div className="mt-8 flex gap-4">
+        <div className="mt-8 flex gap-4 flex-wrap">
           <SocialButton href="https://github.com/landrygeiger">
             GitHub
           </SocialButton>
