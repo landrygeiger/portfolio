@@ -1,6 +1,9 @@
 import { FC } from "react";
-import SocialButton from "./SocialButton";
 import Headshot from "../assets/headshot.png";
+import HeaderItem from "./SocialButton/SocialButton";
+import Github from "../assets/github-mark.svg";
+import Linkedin from "../assets/icons8-linkedin.svg";
+import Resume from "../assets/document-text-svgrepo-com.svg";
 
 const Hero: FC = () => {
   return (
@@ -12,20 +15,27 @@ const Hero: FC = () => {
         <h2 className="text-3xl md:text-2xl lg:text-4xl xl:text-5xl  text-white font-bold">
           I'm <span style={{ color: "rgb(255, 228, 94)" }}>Landry Geiger.</span>
         </h2>
-        <h3 className="text-2xl md:text-xl lg:text-3xl xl:text-3xl  text-white font-bold">
-          I solve problems through{" "}
+        <h3 className="text-2xl md:text-xl lg:text-2xl xl:text-2xl  text-white">
+          I'm a passionate software engineer with a love for solving complex
+          problems through{" "}
           <span style={{ color: "rgb(255, 228, 94)" }}>code.</span>
         </h3>
-        <div className="mt-8 flex gap-4 flex-wrap">
-          <SocialButton href="https://github.com/landrygeiger">
-            GitHub
-          </SocialButton>
-          <SocialButton href="https://www.linkedin.com/in/landrygeiger/">
-            LinkedIn
-          </SocialButton>
-          <SocialButton href="https://drive.google.com/file/d/10wco34wq18SrXb8XFP4viL_5huD1RbqA/view?usp=sharing">
-            Resume
-          </SocialButton>
+        <div className="flex gap-4">
+          <HeaderItem
+            icon={<img src={Github} alt="GitHub" />}
+            href=""
+            tooltip="GitHub"
+          />
+          <HeaderItem
+            icon={<img src={Linkedin} alt="LinkedIn" />}
+            href=""
+            tooltip="LinkedIn"
+          />
+          <HeaderItem
+            icon={<img src={Resume} alt="Resume" />}
+            href=""
+            tooltip="Resume"
+          />
         </div>
       </div>
       <div className="flex-grow basis-0 relative">

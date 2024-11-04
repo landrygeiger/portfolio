@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+
+.tooltip {
+  @apply opacity-0 absolute;
+  @apply top-14;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.has-tooltip:hover .tooltip {
+  @apply opacity-100 z-50;
+}
+
+@tailwind utilities;
