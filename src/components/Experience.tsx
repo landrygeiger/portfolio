@@ -1,5 +1,6 @@
 import { FC } from "react";
 import ExperienceItem from "./ExperienceItem/ExperienceItem";
+import PrivyAI from "../assets/privy-ai-screenshot.png";
 
 const experiences = [
   {
@@ -24,8 +25,8 @@ const experiences = [
   },
   {
     company: "Privy AI",
-    position: "Software Engineer",
-    imgSrc: "",
+    position: "Software Engineer/Project Manager",
+    imgSrc: PrivyAI,
     timePeriod: "Aug. 2024 - Current",
   },
   {
