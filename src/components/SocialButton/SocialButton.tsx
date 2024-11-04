@@ -13,6 +13,7 @@ const HeaderItem: FC<Props> = ({ icon, href, tooltip }) => {
       <a
         href={href}
         className="fill-white no-underline text-xl hover:scale-105 transition flex align-middle"
+        target="_blank"
       >
         {icon}
       </a>

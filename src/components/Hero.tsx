@@ -23,17 +23,17 @@ const Hero: FC = () => {
         <div className="flex gap-4">
           <HeaderItem
             icon={<img src={Github} alt="GitHub" />}
-            href=""
+            href="https://github.com/landrygeiger"
             tooltip="GitHub"
           />
           <HeaderItem
             icon={<img src={Linkedin} alt="LinkedIn" />}
-            href=""
+            href="https://www.linkedin.com/in/landrygeiger"
             tooltip="LinkedIn"
           />
           <HeaderItem
             icon={<img src={Resume} alt="Resume" />}
-            href=""
+            href="https://drive.google.com/file/d/10wco34wq18SrXb8XFP4viL_5huD1RbqA/view?usp=sharing"
             tooltip="Resume"
           />
         </div>
