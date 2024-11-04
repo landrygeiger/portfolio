@@ -5,3 +5,12 @@
   scale: 1.01;
   filter: opacity(50%);
 }
+
+.description {
+  @apply h-32;
+  transition: height 0.3s ease-in-out;
+}
+
+.has-description:hover .description {
+  @apply h-36;
+}
