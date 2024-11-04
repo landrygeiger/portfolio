@@ -1,5 +1,5 @@
 import { FC } from "react";
-import ExperienceItem from "./ExperienceItem";
+import ExperienceItem from "./ExperienceItem/ExperienceItem";
 
 const experiences = [
   {
