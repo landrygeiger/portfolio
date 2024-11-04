@@ -1,0 +1,7 @@
+.bg-img {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  scale: 1.01;
+  filter: opacity(50%);
+}

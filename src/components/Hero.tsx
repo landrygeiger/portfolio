@@ -20,7 +20,7 @@ const Hero: FC = () => {
           problems through{" "}
           <span style={{ color: "rgb(255, 228, 94)" }}>code.</span>
         </h3>
-        <div className="flex gap-4">
+        <div className="flex gap-4 mt-4">
           <HeaderItem
             icon={<img src={Github} alt="GitHub" />}
             href="https://github.com/landrygeiger"
@@ -39,7 +39,7 @@ const Hero: FC = () => {
         </div>
       </div>
       <div className="flex-grow basis-0 relative">
-        <div className="bg-white rounded-lg flex-grow basis-0 absolute w-full h-3/4 bottom-0 -z-10"></div>
+        <div className="bg-gray-800 rounded-lg flex-grow basis-0 absolute w-full h-3/4 bottom-0 -z-10"></div>
         <img src={Headshot} />
       </div>
     </div>

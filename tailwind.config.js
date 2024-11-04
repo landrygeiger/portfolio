@@ -9,6 +9,9 @@ export default {
       dropShadow: {
         red: "5px 5px #f87171",
       },
+      scale: {
+        103: "1.03",
+      },
     },
   },
   plugins: [],
