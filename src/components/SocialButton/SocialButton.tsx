@@ -17,7 +17,7 @@ const HeaderItem: FC<Props> = ({ icon, href, tooltip }) => {
       >
         {icon}
       </a>
-      <span className="tooltip px-2 py-1 bg-white rounded-lg transition text-gray-600 text-sm">
+      <span className="tooltip px-2 py-1 bg-gray-800 rounded-lg transition text-white text-sm">
         {tooltip}
       </span>
     </div>
