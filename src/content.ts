@@ -1,7 +1,7 @@
-import BlackjackOptimal from "../assets/blackjack-optimal.png";
-import Chaptr from "../assets/chaptr.png";
-import EveryoneIsJohn from "../assets/everyone-is-john.png";
-import PrivyAI from "../assets/privy-ai-screenshot.png";
+import BlackjackOptimal from "./assets/blackjack-optimal.png";
+import Chaptr from "./assets/chaptr.png";
+import EveryoneIsJohn from "./assets/everyone-is-john.png";
+import PrivyAI from "./assets/privy-ai-screenshot.png";
 
 export type Experience =
   | {
