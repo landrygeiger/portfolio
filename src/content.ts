@@ -33,15 +33,7 @@ export const JOBS: Experience[] = [
     imgSrc:
       "https://framerusercontent.com/images/YgKuMbfGEe8wEtKnYPdvnYefG2w.png?scale-down-to=1024",
     timePeriod: "May. 2024 - Aug. 2024",
-    skills: [
-      "Angular",
-      "Typescript",
-      "Firebase",
-      "ThreeJS",
-      "Agile",
-      "Nx",
-      "Revit",
-    ],
+    skills: ["Angular", "Typescript", "Firebase", "ThreeJS", "Agile"],
   },
   {
     kind: "job",
@@ -50,7 +42,7 @@ export const JOBS: Experience[] = [
     imgSrc:
       "https://www.sinclairhille.com/sites/default/files/styles/banner-copy/public/hudl_landscape_foreground_website.jpg?itok=QqqSXpdZ",
     timePeriod: "May. 2023 - Aug. 2023",
-    skills: ["C#", ".NET", "AWS", "Terraform", "SQL", "Agile", "Lambda"],
+    skills: ["C#", ".NET", "AWS", "Terraform", "SQL", "Agile"],
   },
   {
     kind: "job",
@@ -66,14 +58,7 @@ export const JOBS: Experience[] = [
     position: "Software Engineer/Project Manager",
     imgSrc: PrivyAI,
     timePeriod: "Aug. 2024 - Current",
-    skills: [
-      "React",
-      "Typescript",
-      "AWS",
-      "Whisper",
-      "Generative AI",
-      "PyTorch",
-    ],
+    skills: ["React", "Typescript", "AWS", "Whisper", "Gen. AI"],
   },
   {
     kind: "job",
@@ -90,13 +75,7 @@ export const JOBS: Experience[] = [
     imgSrc:
       "https://miro.medium.com/v2/resize:fit:1400/1*tkBROuzOQU6wJLZY7EN9LA.jpeg",
     timePeriod: "Jan. 2024 - May. 2024",
-    skills: [
-      "System Design",
-      "Unit Testing",
-      "Accessibility",
-      "REST APIs",
-      "Integration Testing",
-    ],
+    skills: ["System Design", "Testing", "Accessibility", "REST APIs"],
   },
 ];
 
@@ -106,33 +85,21 @@ export const PROJECTS: Experience[] = [
     title: "Everyone is John",
     subtitle: "HackMidwest 2024 Contestant",
     imgSrc: EveryoneIsJohn,
-    skills: [
-      "Zoom Video SDK",
-      "Generative AI",
-      "React",
-      "Typescript",
-      "WebSocket",
-    ],
+    skills: ["ZoomSDK", "Gen. AI", "React", "Typescript", "WebSocket"],
   },
   {
     kind: "project",
     title: "Blackjack Optimal",
     subtitle: "CornHacks 2024 3rd Place Finalist",
     imgSrc: BlackjackOptimal,
-    skills: [
-      "Computer Vision",
-      "Tensorflow",
-      "React",
-      "Typescript",
-      "WebSocket",
-    ],
+    skills: ["Computer Vision", "Tensorflow", "React", "Typescript"],
   },
   {
     kind: "project",
     title: "Access Genie",
-    subtitle: "CornHacks 2023 Business Track Champion",
+    subtitle: "CornHacks 2023 Business Track Champ",
     imgSrc: "",
-    skills: ["React", "Typescript", "Firebase", "Cloud Functions"],
+    skills: ["React", "Typescript", "Firebase", "Material"],
   },
   {
     kind: "project",
@@ -144,6 +111,6 @@ export const PROJECTS: Experience[] = [
     kind: "project",
     title: "BottomHat",
     imgSrc: "",
-    skills: ["React", "Typescript", "WebSocket", "MongoDb", "WebSocket"],
+    skills: ["WebSocket", "React", "Typescript", "MongoDb", "JWT"],
   },
 ];

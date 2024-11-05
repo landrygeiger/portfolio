@@ -25,7 +25,8 @@ const ExperienceItem: FC<Props> = ({ experience }) => {
           </p>
         )}
         {timePeriod && <p className="text-gray-300 text-sm">{timePeriod}</p>}
-        <div className="flex flex-wrap gap-1 mt-3">
+        {/** gap-y-32 will essentially not show any skills that overflow */}
+        <div className="flex flex-wrap gap-x-1 mt-3 flex-basis flex-grow align-bottom gap-y-32">
           {experience.skills.map((skill) => (
             <div className="py-1 px-2 bg-white text-gray-800 text-xs rounded-md min-h">
               {skill}
