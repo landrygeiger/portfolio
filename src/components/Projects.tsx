@@ -3,11 +3,13 @@ import ExperienceItem from "./ExperienceItem/ExperienceItem";
 import EveryoneIsJohn from "../assets/everyone-is-john.png";
 import BlackjackOptimal from "../assets/blackjack-optimal.png";
 import Chaptr from "../assets/chaptr.png";
+import { Experience } from "../content";
 
-const projects = [
+const projects: Experience[] = [
   {
+    kind: "project",
     title: "Everyone is John",
-    position: "HackMidwest 2024 Contestant",
+    subtitle: "HackMidwest 2024 Contestant",
     imgSrc: EveryoneIsJohn,
     skills: [
       "Zoom Video SDK",
@@ -18,8 +20,9 @@ const projects = [
     ],
   },
   {
+    kind: "project",
     title: "Blackjack Optimal",
-    position: "CornHacks 2024 3rd Place Finalist",
+    subtitle: "CornHacks 2024 3rd Place Finalist",
     imgSrc: BlackjackOptimal,
     skills: [
       "Computer Vision",
@@ -30,17 +33,20 @@ const projects = [
     ],
   },
   {
+    kind: "project",
     title: "Access Genie",
-    position: "CornHacks 2023 Business Track Champion",
+    subtitle: "CornHacks 2023 Business Track Champion",
     imgSrc: "",
     skills: ["React", "Typescript", "Firebase", "Cloud Functions"],
   },
   {
+    kind: "project",
     title: "Chaptr",
     imgSrc: Chaptr,
     skills: ["React", "Typescript", "Firebase", "fp-ts"],
   },
   {
+    kind: "project",
     title: "BottomHat",
     imgSrc: "",
     skills: ["React", "Typescript", "WebSocket", "MongoDb", "WebSocket"],
@@ -52,14 +58,8 @@ const Projects: FC = () => {
     <div>
       <h1 className="font-lemon text-white text-3xl lg:text-4xl">Projects</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
-        {projects.map((experience) => (
-          <ExperienceItem
-            key={experience.title + experience.position}
-            company={experience.title}
-            position={experience.position}
-            imgSrc={experience.imgSrc}
-            skills={experience.skills}
-          />
+        {projects.map((experience, i) => (
+          <ExperienceItem key={i} experience={experience} />
         ))}
       </div>
     </div>

@@ -1,9 +1,11 @@
 import { FC } from "react";
 import ExperienceItem from "./ExperienceItem/ExperienceItem";
 import PrivyAI from "../assets/privy-ai-screenshot.png";
+import { Experience } from "../content";
 
-const experiences = [
+const experiences: Experience[] = [
   {
+    kind: "job",
     company: "Layer",
     position: "Software Engineering Intern",
     imgSrc:
@@ -20,6 +22,7 @@ const experiences = [
     ],
   },
   {
+    kind: "job",
     company: "Hudl",
     position: "Software Engineering Intern",
     imgSrc:
@@ -28,6 +31,7 @@ const experiences = [
     skills: ["C#", ".NET", "AWS", "Terraform", "SQL", "Agile", "Lambda"],
   },
   {
+    kind: "job",
     company: "Kiewit",
     position: "Platform Operations Intern",
     imgSrc: "https://www.kiewit.com/wp-content/uploads/2021/02/KHQ-10.jpg",
@@ -35,6 +39,7 @@ const experiences = [
     skills: ["Python", "Azure", "Ansible", "SQL"],
   },
   {
+    kind: "job",
     company: "Privy AI",
     position: "Software Engineer/Project Manager",
     imgSrc: PrivyAI,
@@ -49,6 +54,7 @@ const experiences = [
     ],
   },
   {
+    kind: "job",
     company: "Cattle Kettle",
     position: "Software Engineer",
     imgSrc: "",
@@ -56,6 +62,7 @@ const experiences = [
     skills: ["React", "Typescript", "Firebase", "fp-ts", "Hardware"],
   },
   {
+    kind: "job",
     company: "UNL School of Computing",
     position: "SWE IV Teaching Assistant",
     imgSrc:
@@ -71,24 +78,17 @@ const experiences = [
   },
 ];
 
-const Experience: FC = () => {
+const Experiences: FC = () => {
   return (
     <div>
       <h1 className="font-lemon text-white text-3xl lg:text-4xl">Experience</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
-        {experiences.map((experience) => (
-          <ExperienceItem
-            key={experience.company + experience.position}
-            company={experience.company}
-            position={experience.position}
-            imgSrc={experience.imgSrc}
-            timePeriod={experience.timePeriod}
-            skills={experience.skills}
-          />
+        {experiences.map((experience, i) => (
+          <ExperienceItem key={i} experience={experience} />
         ))}
       </div>
     </div>
   );
 };
 
-export default Experience;
+export default Experiences;
