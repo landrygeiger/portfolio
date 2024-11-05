@@ -7,10 +7,10 @@
 }
 
 .description {
-  @apply h-32;
+  @apply h-40;
   transition: height 0.3s ease-in-out;
 }
 
 .has-description:hover .description {
-  @apply h-36;
+  @apply h-48;
 }

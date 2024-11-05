@@ -9,7 +9,15 @@ const experiences = [
     imgSrc:
       "https://framerusercontent.com/images/YgKuMbfGEe8wEtKnYPdvnYefG2w.png?scale-down-to=1024",
     timePeriod: "May. 2024 - Aug. 2024",
-    skills: ["Angular", "Typescript", "Firebase", "Three.js", "Agile"],
+    skills: [
+      "Angular",
+      "Typescript",
+      "Firebase",
+      "ThreeJS",
+      "Agile",
+      "Nx",
+      "Revit",
+    ],
   },
   {
     company: "Hudl",
@@ -17,7 +25,7 @@ const experiences = [
     imgSrc:
       "https://www.sinclairhille.com/sites/default/files/styles/banner-copy/public/hudl_landscape_foreground_website.jpg?itok=QqqSXpdZ",
     timePeriod: "May. 2023 - Aug. 2023",
-    skills: ["C#", ".NET", "AWS", "Terraform", "SQL", "Agile"],
+    skills: ["C#", ".NET", "AWS", "Terraform", "SQL", "Agile", "Lambda"],
   },
   {
     company: "Kiewit",
@@ -31,7 +39,14 @@ const experiences = [
     position: "Software Engineer/Project Manager",
     imgSrc: PrivyAI,
     timePeriod: "Aug. 2024 - Current",
-    skills: ["React", "Typescript", "AWS", "LLMs", "Whisper"],
+    skills: [
+      "React",
+      "Typescript",
+      "AWS",
+      "Whisper",
+      "Generative AI",
+      "PyTorch",
+    ],
   },
   {
     company: "Cattle Kettle",
@@ -46,7 +61,13 @@ const experiences = [
     imgSrc:
       "https://miro.medium.com/v2/resize:fit:1400/1*tkBROuzOQU6wJLZY7EN9LA.jpeg",
     timePeriod: "Jan. 2024 - May. 2024",
-    skills: ["System Design", "Testing", "Accessibility", "APIs"],
+    skills: [
+      "System Design",
+      "Unit Testing",
+      "Accessibility",
+      "REST APIs",
+      "Integration Testing",
+    ],
   },
 ];
 

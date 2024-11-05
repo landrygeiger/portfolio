@@ -9,13 +9,25 @@ const projects = [
     title: "Everyone is John",
     position: "HackMidwest 2024 Contestant",
     imgSrc: EveryoneIsJohn,
-    skills: ["Zoom Video SDK", "Gen-AI", "React", "Typescript"],
+    skills: [
+      "Zoom Video SDK",
+      "Generative AI",
+      "React",
+      "Typescript",
+      "WebSocket",
+    ],
   },
   {
     title: "Blackjack Optimal",
     position: "CornHacks 2024 3rd Place Finalist",
     imgSrc: BlackjackOptimal,
-    skills: ["Computer Vision", "Tensorflow", "React", "Typescript"],
+    skills: [
+      "Computer Vision",
+      "Tensorflow",
+      "React",
+      "Typescript",
+      "WebSocket",
+    ],
   },
   {
     title: "Access Genie",
@@ -31,7 +43,7 @@ const projects = [
   {
     title: "BottomHat",
     imgSrc: "",
-    skills: ["React", "Typescript", "WebSocket", "MongoDb"],
+    skills: ["React", "Typescript", "WebSocket", "MongoDb", "WebSocket"],
   },
 ];
 
