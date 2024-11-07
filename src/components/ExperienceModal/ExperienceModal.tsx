@@ -1,6 +1,8 @@
 import { FC, useCallback, useEffect, useRef } from "react";
 import { Experience, isJob } from "../../content";
 import "./ExperienceModal.css";
+import Skill from "../Skill";
+import SkillList from "../SkillList";
 
 type Props = {
   /**
@@ -118,6 +120,7 @@ const ExperienceModal: FC<Props> = ({ experience, isOpen, close }) => {
                 Contributions
               </h2>
               <h2 className="font-lemon text-2xl text-white mt-4">Skills</h2>
+              <SkillList skills={experience.skills} overflow="visible" />
             </div>
           </div>
         )}

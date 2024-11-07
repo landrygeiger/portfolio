@@ -2,6 +2,7 @@ import { FC, useCallback } from "react";
 import { Experience, isJob } from "../../content";
 import "./ExperienceItem.css";
 import Skill from "../Skill";
+import SkillList from "../SkillList";
 
 type Props = {
   experience: Experience;
@@ -32,12 +33,7 @@ const ExperienceItem: FC<Props> = ({ experience, openModal }) => {
           </p>
         )}
         {timePeriod && <p className="text-gray-300 text-sm">{timePeriod}</p>}
-        {/** gap-y-32 will essentially not show any skills that overflow */}
-        <div className="flex flex-wrap gap-x-1 mt-3 flex-basis flex-grow align-bottom gap-y-32">
-          {experience.skills.map((skill) => (
-            <Skill name={skill} />
-          ))}
-        </div>
+        <SkillList skills={experience.skills} overflow="hidden" />
       </div>
       <img src={experience.imgSrc} className="bg-img absolute z-10" />
     </div>
