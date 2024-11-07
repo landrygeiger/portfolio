@@ -113,13 +113,12 @@ const ExperienceModal: FC<Props> = ({ experience, isOpen, close }) => {
               <h1 className="font-lemon text-4xl text-white">{title}</h1>
               <h2 className="text-accent text-xl">{subtitle}</h2>
               <p className="text-gray-300 ">{timePeriod}</p>
+              <SkillList skills={experience.skills} overflow="visible" />
               <h2 className="font-lemon text-2xl text-white mt-4">Overview</h2>
               <p className="text-white"></p>
               <h2 className="font-lemon text-2xl text-white mt-4">
                 Contributions
               </h2>
-              <h2 className="font-lemon text-2xl text-white mt-4">Skills</h2>
-              <SkillList skills={experience.skills} overflow="visible" />
             </div>
           </div>
         )}
