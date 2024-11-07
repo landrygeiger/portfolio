@@ -1,0 +1,26 @@
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0%;
+  transition: opacity 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.dark-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 45;
+  opacity: 0%;
+  transition: opacity 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.img {
+  filter: opacity(75%);
+}
