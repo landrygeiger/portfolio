@@ -49,31 +49,37 @@ const ExperienceModal: FC<Props> = ({ experience, isOpen, close }) => {
     [bodyRef]
   );
 
-  // const showModal = useCallback(() => {
-  //   bgRef.current.style.opacity = "100%";
-  //   modalRef.current.style.opacity = "100%";
-  // }, [bgRef, modalRef, contentRef]);
+  const showModal = useCallback(() => {
+    if (bgRef.current && modalRef.current && contentRef.current) {
+      bgRef.current.style.opacity = "100%";
+      bgRef.current.style.visibility = "visible";
+
+      modalRef.current.style.opacity = "100%";
+      modalRef.current.style.visibility = "visible";
+
+      transferScrollbar("modal");
+      contentRef.current.scroll(0, 0);
+    }
+  }, [bgRef, modalRef, contentRef]);
+
+  const hideModal = useCallback(() => {
+    if (bgRef.current && modalRef.current) {
+      bgRef.current.style.opacity = "0%";
+      modalRef.current.style.opacity = "0%";
+
+      transferScrollbar("body");
+
+      setTimeout(() => {
+        if (bgRef.current && modalRef.current) {
+          bgRef.current.style.visibility = "hidden";
+          modalRef.current.style.visibility = "hidden";
+        }
+      }, 300);
+    }
+  }, [bgRef, modalRef]);
 
   useEffect(() => {
-    if (bgRef.current && modalRef.current && contentRef.current) {
-      bgRef.current.style.opacity = isOpen ? "100%" : "0%";
-      modalRef.current.style.opacity = isOpen ? "100%" : "0%";
-
-      transferScrollbar(isOpen ? "modal" : "body");
-
-      if (isOpen) {
-        bgRef.current.style.visibility = "visible";
-        modalRef.current.style.visibility = "visible";
-        contentRef.current.scroll(0, 0);
-      } else {
-        setTimeout(() => {
-          if (bgRef.current && modalRef.current) {
-            bgRef.current.style.visibility = "hidden";
-            modalRef.current.style.visibility = "hidden";
-          }
-        }, 300);
-      }
-    }
+    isOpen ? showModal() : hideModal();
   }, [isOpen]);
 
   useEffect(() => {
