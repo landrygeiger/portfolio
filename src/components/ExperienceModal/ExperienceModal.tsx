@@ -1,8 +1,7 @@
 import { FC, useCallback, useEffect, useRef } from "react";
 import { Experience, isJob } from "../../content";
-import "./ExperienceModal.css";
-import Skill from "../Skill";
 import SkillList from "../SkillList";
+import "./ExperienceModal.css";
 
 type Props = {
   /**

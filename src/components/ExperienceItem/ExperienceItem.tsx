@@ -1,8 +1,7 @@
 import { FC, useCallback } from "react";
 import { Experience, isJob } from "../../content";
-import "./ExperienceItem.css";
-import Skill from "../Skill";
 import SkillList from "../SkillList";
+import "./ExperienceItem.css";
 
 type Props = {
   experience: Experience;
