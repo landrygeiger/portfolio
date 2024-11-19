@@ -12,5 +12,5 @@
 }
 
 .has-description:hover .description {
-  @apply h-36;
+  @apply sm:h-36;
 }
