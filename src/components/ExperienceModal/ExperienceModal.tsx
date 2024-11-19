@@ -2,6 +2,7 @@ import { FC, useCallback, useEffect, useRef } from "react";
 import { Experience, isJob } from "../../content";
 import SkillList from "../SkillList";
 import "./ExperienceModal.css";
+import CloseButton from "../CloseButton";
 
 type Props = {
   /**
@@ -110,7 +111,12 @@ const ExperienceModal: FC<Props> = ({ experience, isOpen, close }) => {
               className="h-4/6 sm:h-3/5 lg:w-3/5 lg:h-full p-8 z-20 bg-gray-800 overflow-y-scroll text-left"
               ref={contentRef}
             >
-              <h1 className="font-lemon text-4xl text-white">{title}</h1>
+              <div className="flex flex-row items-start">
+                <h1 className="font-lemon text-4xl text-white flex-1">
+                  {title}
+                </h1>
+                <CloseButton close={close} className="-mt-1" />
+              </div>
               <h2 className="text-accent text-xl">{subtitle}</h2>
               <p className="text-gray-300 ">{timePeriod}</p>
               <SkillList skills={experience.skills} overflow="visible" />
