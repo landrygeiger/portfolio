@@ -53,7 +53,6 @@ export const JOBS: Experience[] = [
     company: "Hudl",
     position: "Software Engineering Intern",
     imgSrc:
-      // "https://www.sinclairhille.com/sites/default/files/styles/banner-copy/public/hudl_landscape_foreground_website.jpg?itok=QqqSXpdZ",
       "https://media.glassdoor.com/l/4f/d6/f6/3d/hudl-hq.jpg?signature=4e3020ad4e40bf3c7f42d6e7b2cc7ca1cec2a0dde6486e9b67485f2cb906d2e5",
     timePeriod: "May. 2023 - Aug. 2023",
     skills: ["C#", ".NET", "AWS", "Terraform", "SQL", "Agile"],
@@ -184,12 +183,4 @@ export const PROJECTS: Experience[] = [
     overview:
       "Access Genie, CornHacks 2023's business track champion, is a proof-of-concept API that allows organizations to create security roles for their applications and set granular permissions per role. Consumers of the API are then able to authenticate and verify that a user has a particular permission to perform an action in an application. In this way, organizations are able to streamline role creation and management while easily following the least-access security principle. This project was developed in 24 hours as an entry in UNL's CornHacks 2023.",
   },
-  // {
-  //   kind: "project",
-  //   title: "BottomHat",
-  //   imgSrc: "",
-  //   skills: ["WebSocket", "React", "Typescript", "MongoDb", "JWT"],
-  //   contributions: [],
-  //   overview: "",
-  // },
 ];
