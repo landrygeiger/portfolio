@@ -115,10 +115,17 @@ const ExperienceModal: FC<Props> = ({ experience, isOpen, close }) => {
               <p className="text-gray-300 ">{timePeriod}</p>
               <SkillList skills={experience.skills} overflow="visible" />
               <h2 className="font-lemon text-2xl text-white mt-4">Overview</h2>
-              <p className="text-white"></p>
-              <h2 className="font-lemon text-2xl text-white mt-4">
+              <p className="text-white">{experience.overview}</p>
+              <h2 className="font-lemon text-2xl text-white mt-4 mb-2">
                 Contributions
               </h2>
+              <ul className="flex flex-col gap-3 list-disc pl-5 m-0">
+                {experience.contributions.map((contribution, i) => (
+                  <li key={i} className="text-white pl-0">
+                    {contribution}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         )}
