@@ -20,6 +20,7 @@ export type Experience =
       title: string;
       subtitle?: string;
       skills: string[];
+      timePeriod?: string;
       imgSrc: string;
       contributions: string[];
       overview: string;
@@ -130,46 +131,65 @@ export const PROJECTS: Experience[] = [
     kind: "project",
     title: "Everyone is John",
     subtitle: "HackMidwest 2024 Contestant",
+    timePeriod: "Sept. 2024",
     imgSrc: EveryoneIsJohn,
     skills: ["ZoomSDK", "Gen. AI", "React", "Typescript", "WebSocket"],
-    contributions: [],
-    overview: "",
+    contributions: [
+      "Built a web application using the ZoomSDK to create face-to-face game lobbies using players' web cams.",
+      "Engineered 12 prompts for use with large language and image diffusion models to automate the table top RPG game master role.",
+      "Used functional programming principles to implement game logic using a state reducer flow.",
+    ],
+    overview:
+      "Based on the popular table-top role-playing-game, Everyone Is John is a web-based multiplayed cooperative story-telling game where the rules are simple: everyone is John. Each player takes turns controlling our protagonist, John, in order to complete their hidden objectives using a set of predetermined skills. By utilizing the ZoomSDK and generative AI through AWS Bedrock, we enable players to play virtually face-to-face with the game master role completely automated by AI. This project was built in 24 hours as a contestant in HackMidwest 2024.",
   },
   {
     kind: "project",
-    title: "Blackjack Optimal",
-    subtitle: "CornHacks 2024 3rd Place Finalist",
+    title: "Chaptr",
+    subtitle: "Raikes Startup Studio Competitor",
+    timePeriod: "Sept. 2023 - Current",
+    imgSrc: Chaptr,
+    skills: ["React", "Typescript", "Firebase", "fp-ts"],
+    contributions: [
+      "Built web platform for 100+ daily users supporting service hour tracking and visualization, file storage, member search, and user forum.",
+      "Designed with security in mind by protecting sensitive chapter information with authentication supported by manageable user roles.",
+    ],
+    overview:
+      "Chaptr is an all-in-one chapter management solution for Greek college organizations. By providing a unified platform encompassing forums, member directories, file sharing, and service hour tracking, Chaptr streamlines communication and fosters collaboration within Greek chapters. Members no longer need to navigate multiple accounts or sift through countless messages to find what they need. Instead, they can access all relevant information and resources from a single, searchable interface.",
+  },
+  {
+    kind: "project",
+    title: "Black Jack Optimal",
+    subtitle: "CornHacks 2024 3rd Place Overall",
+    timePeriod: "Feb. 2024",
     imgSrc: BlackjackOptimal,
     skills: ["Computer Vision", "Tensorflow", "React", "Typescript"],
     contributions: [
       "Built a web app with 4 other developers that takes video feed from the user and detects the current state of a Blackjack game by using a custom-trained computer vision model.",
       "Implemented algorithm to suggest the most statistically optimal move for each player to make based on blackjack-specific game theory.",
     ],
-    overview: "",
+    overview:
+      "Ever seen the movie 21? Black Jack Optimal, 3rd place overall at CornHacks 2024, leverages computer vision to determine the state of an ongoing black jack game and prescribes the most statistically optimal choice. The solution comprises of a custom classification model sitting behind a WebSocket API that delivers predictions to a Progressive Web App developed with Typescript and React. This project was built in 24 hours as in entry for UNL's CornHacks 2024.",
   },
   {
     kind: "project",
     title: "Access Genie",
-    subtitle: "CornHacks 2023 Business Track Champ",
-    imgSrc: "",
+    timePeriod: "Feb. 2023",
+    subtitle: "CornHacks 2023 Track 1st Place",
+    imgSrc:
+      "https://unlcornhacks.com/static/media/02cornhacks24.5859b719af84e60e574a.png",
     skills: ["React", "Typescript", "Firebase", "Material"],
-    contributions: [],
-    overview: "",
+    contributions: [
+      "Built an authorization API with 4 other developers for use by companies to modularly manage user permissions to best follow modern security practices (least access principle).",
+    ],
+    overview:
+      "Access Genie, CornHacks 2023's business track champion, is a proof-of-concept API that allows organizations to create security roles for their applications and set granular permissions per role. Consumers of the API are then able to authenticate and verify that a user has a particular permission to perform an action in an application. In this way, organizations are able to streamline role creation and management while easily following the least-access security principle. This project was developed in 24 hours as an entry in UNL's CornHacks 2023.",
   },
-  {
-    kind: "project",
-    title: "Chaptr",
-    imgSrc: Chaptr,
-    skills: ["React", "Typescript", "Firebase", "fp-ts"],
-    contributions: [],
-    overview: "",
-  },
-  {
-    kind: "project",
-    title: "BottomHat",
-    imgSrc: "",
-    skills: ["WebSocket", "React", "Typescript", "MongoDb", "JWT"],
-    contributions: [],
-    overview: "",
-  },
+  // {
+  //   kind: "project",
+  //   title: "BottomHat",
+  //   imgSrc: "",
+  //   skills: ["WebSocket", "React", "Typescript", "MongoDb", "JWT"],
+  //   contributions: [],
+  //   overview: "",
+  // },
 ];

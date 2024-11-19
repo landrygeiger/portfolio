@@ -13,7 +13,7 @@ const ExperienceItem: FC<Props> = ({ experience, openModal }) => {
   const subtitle = isJob(experience)
     ? experience.position
     : experience.subtitle;
-  const timePeriod = isJob(experience) ? experience.timePeriod : null;
+  const timePeriod = experience.timePeriod;
 
   const handleClick = useCallback(() => openModal(), []);
 
