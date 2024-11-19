@@ -11,7 +11,7 @@ const SkillList: FC<Props> = ({ skills, overflow }) => {
   return (
     <div
       className={`flex flex-wrap gap-x-1 mt-3 flex-basis flex-grow align-bottom ${
-        overflow === "hidden" ? "gap-y-32" : ""
+        overflow === "hidden" ? "gap-y-32" : "gap-y-1"
       }`}
     >
       {skills.map((skill, i) => (
