@@ -33,7 +33,7 @@ const Hero: FC = () => {
           />
           <HeaderItem
             icon={<img src={Resume} alt="Resume" />}
-            href="https://drive.google.com/file/d/10wco34wq18SrXb8XFP4viL_5huD1RbqA/view?usp=sharing"
+            href="https://drive.google.com/file/d/1fkVMKFhx4I_lnyKbXAmr_pud5vGpdOxD/view?usp=sharing"
             tooltip="Resume"
           />
         </div>
