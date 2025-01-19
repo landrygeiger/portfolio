@@ -175,7 +175,7 @@ export const PROJECTS: Experience[] = [
     timePeriod: "Feb. 2023",
     subtitle: "CornHacks 2023 Track 1st Place",
     imgSrc:
-      "https://unlcornhacks.com/static/media/02cornhacks24.5859b719af84e60e574a.png",
+      "https://unlcornhacks.com/static/media/HomePage.b33b4939ef5daf339ed2.jpeg",
     skills: ["React", "Typescript", "Firebase", "Material"],
     contributions: [
       "Built an authorization API with 4 other developers for use by companies to modularly manage user permissions to best follow modern security practices (least access principle).",
